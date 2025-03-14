@@ -6,26 +6,26 @@ import { Mic } from "lucide-react"
 
 export function Hero() {
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-blue-500 to-blue-600 overflow-hidden">
-      <div className="container mx-auto px-4 pt-32 pb-16">
+    <div className="relative bg-gradient-to-br from-[#f6f6ff] to-[#ede9fa] overflow-hidden">
+      <div className="container mx-auto px-4 pt-60 pb-28">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-5xl font-bold text-white mb-6">
+            <h1 className="text-5xl font-semibold text-primary mb-6">
               Revolutionize<br />
-              Interaction with AI<br />
-              Voice
+              <span className="text-black font-[400]">Interaction with AI<br />
+              Voice</span>
             </h1>
-            <p className="text-blue-100 mb-8 text-lg">
+            <p className="text-gray-500 mb-8 text-lg font-[400]">
               Your AI-powered voice agent that seamlessly integrates into any
               system – enabling natural, human-like conversations.
             </p>
             <div className="flex space-x-4">
-              <Button variant="secondary" size="lg">Try for Free</Button>
-              <Button variant="outline" size="lg" className="text-white border-white hover:bg-white/10">
+              <Button variant="default" size="lg">Try for Free</Button>
+              <Button variant="outline" size="lg">
                 Request a Demo
               </Button>
             </div>

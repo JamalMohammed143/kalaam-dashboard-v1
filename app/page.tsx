@@ -8,8 +8,8 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <Features />
       <RequestAccess />
+      <Features />
     </main>
   )
 }
